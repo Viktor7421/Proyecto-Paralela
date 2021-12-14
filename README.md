@@ -9,3 +9,11 @@ Generador de numeros random y paralelizandolos
 |  1 | 201810010 | Lazo Pampa, David Alejandro | 100% |
 # Informe
 [PAPER](https://google.com.pe).
+# Descripción
+Refactorización del código en c++
+## Globals.h
+    Todas las constantes y variables globales
+## Math.h
+    Operacion matematicas de modulos, vectores y matrices.
+## RngStream.h
+    Clase principal de random stream 
