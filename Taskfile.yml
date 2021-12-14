@@ -1,0 +1,12 @@
+version: '3'
+
+dotenv: []
+
+tasks:
+  run:
+    deps: [build]
+    cmds:
+      - ./main.o
+  build:
+    cmds:
+      - clang++ -o main.o main.cc --std=c++2a
