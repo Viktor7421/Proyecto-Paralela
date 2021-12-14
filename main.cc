@@ -9,12 +9,15 @@ auto main() -> int {
 
   RngStream R;
 
+  R.IncreasedPresic(true);
+  R.SetAntithetic(true);
+
   cout << "Valor: " << R.RandU01() << endl;
   cout << "Valor: " << R.RandU01() << endl;
   cout << "Valor: " << R.RandU01() << endl;
 
-  //R.ResetNextSubstream();
-  R.AdvanceState(10, 6);
+  R.ResetNextSubstream();
+  // R.AdvanceState(10, 6);
   cout << endl;
 
   cout << "Valor: " << R.RandU01() << endl;
@@ -23,6 +26,6 @@ auto main() -> int {
 
   cout << endl;
 
-  R.WriteStateFull();
+  // R.WriteStateFull();
   return 0;
 }
